@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: url("../i/bg.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.header h5 {
+    color: #00FF00;
+    margin-top: 30px;
+    font-size: 30px;
+}
