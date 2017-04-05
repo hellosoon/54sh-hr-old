@@ -19,7 +19,7 @@ class result extends CI_Controller
      */
     public function index($str)
     {
-        $p = '/^([\w]+)$/';
+        $p = '/^([\w]+)$/';//正则校验，配合框架多重防注入，此URL有对外访问权限，没有权限控制
         if (preg_match($p, $str, $m)) {
             $query = $this->db->where('sign_id=', $str)->get('sh_signup');
             if (count($query->result_array())) {
